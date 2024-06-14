@@ -1,0 +1,95 @@
+.footer {
+    display: block;
+    background-color: #309b9b;
+    color: white;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.footer-contenido {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-links {
+    width: 20%;
+    padding: 0 15px;
+    text-align: left;
+}
+
+.footer-links h4 {
+    text-align: center;
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 25px;
+    font-weight: 500;
+    border-bottom: 2px solid white;
+    padding-bottom: 10px;
+}
+
+.footer-links ul li a {
+    font-size: 18px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    margin-bottom: 15px;
+    transition: all .4s ease;
+}
+
+.footer-links ul li a:hover {
+    padding-left: 6px;
+    color: #000000;
+}
+
+
+.red-social {
+    width: 20%;
+    padding: 0 15px;
+    text-align: left;
+}
+
+.red-social h4 {
+    text-align: center;
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 25px;
+    font-weight: 500;
+    border-bottom: 2px solid white;
+    padding-bottom: 10px;
+}
+
+.red-social  a {
+    padding: 0 15px;
+    font-size: 25px;
+    text-decoration: none;
+    color: white;
+    margin-bottom: 15px;
+    transition: all .4s ease;
+}
+
+.red-social a:hover {
+    padding-left: 6px;
+    color: black;
+}
+
+
+
+
+/* RESPONSIVE */
+
+/* FOOTER */ 
+
+@media (max-width:991px) {
+
+    .footer-links,
+    .red-social {
+        width: 100%;
+     }
+     .red-social {
+        text-align: center;
+     }
+     .footer-links{
+        text-align: start;
+        padding: 0 50px;
+     }
+}

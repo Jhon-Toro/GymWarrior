@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    font-family: "Roboto", sans-serif;
+    padding: 0;
+    color-scheme: dark light;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+::selection {
+  background-color: #32b6b6;
+  color: white;
+}
+.header-nav {
+    position: relative;
+    background-image: url('App/Assets/IMG/JPG/wall.jpg');
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    background-size: cover;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.685);
+}
+.main {
+  position: absolute;
+}
+.main h1{
+  text-align: center;
+  
+}
+/* FIN MAIN */
+
+.header-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  z-index: 2; /* Asegura que esté por encima del fondo */
+}
+
+.title-container {
+  text-align: center;
+}
+.site-title {
+  font-size: 8rem;
+  margin-bottom: 20px;
+}
+.site-description {
+  width: 800px;
+  margin: 0 auto;
+  font-size: 1.2rem;
+  text-align: start;
+  margin-bottom: 50px;
+}
+
+.btn-inscribete {
+  font-size: 1.5rem;
+  padding: 10px 20px;
+  background-color: #32b6b6;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-inscribete:hover {
+  background-color: #0b4d74;
+}
+
+
+
+
+
+
+/* CARDS */
+.planes-titulo {
+  text-align: center;
+  font-size: 4rem;
+  margin-bottom: 30px;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px; 
+    flex-wrap: wrap; 
+  }
+  
+  .cartas {
+    position: relative;
+    width: 250px;
+    height: 320px;
+    color: #fff;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  
+  .cartas:hover {
+    transform: translateY(-10px);
+  }
+  
+  .cartas::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(45deg, #32b6b6, #0b4d74);
+    border-radius: 1.2em;
+  }
+  
+  .cartas span {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    right: 6px;
+    bottom: 6px;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 2;
+    border-radius: 1em;
+  }
+  
+  .cartas span::before {
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  .cartas .content {
+    position: relative;
+    padding: 20px;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+    font-size: 1em;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .plan-detalles h3 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #32b6b6;
+  }
+  
+  .plan-detalles p {
+    margin: 5px 0;
+    font-size: 0.9em;
+  }
+  button {
+    margin-top: 30px;
+    --green: #32b6b6;
+    font-size: 15px;
+    padding: 0.7em 2.7em;
+    letter-spacing: 0.06em;
+    position: relative;
+    font-family: inherit;
+    border-radius: 0.6em;
+    overflow: hidden;
+    transition: all 0.3s;
+    line-height: 1.4em;
+    border: 2px solid var(--green);
+    background: linear-gradient(to right, rgba(27, 253, 156, 0.1) 1%, transparent 40%,transparent 60% , rgba(27, 253, 156, 0.1) 100%);
+    color: var(--green);
+    box-shadow: inset 0 0 10px rgba(27, 218, 224, 0.753), 0 0 9px 3px rgba(27, 253, 156, 0.1);
+    cursor: crosshair;
+  }
+  
+  .boton:hover {
+    color: #82ffc9;
+    box-shadow: inset 0 0 10px #82ffc9(14, 109, 153, 0.6), 0 0 9px 3px #82ffc9(27, 253, 156, 0.2);
+  }
+  
+  .boton:before {
+    content: "";
+    position: absolute;
+    left: -4em;
+    width: 4em;
+    height: 100%;
+    top: 0;
+    transition: transform .4s ease-in-out;
+    background: linear-gradient(to right, transparent 1%, #82ffc9(27, 253, 156, 0.1) 40%,#82ffc9(27, 253, 156, 0.1) 60% , transparent 100%);
+  }
+  
+  .boton:hover:before {
+    transform: translateX(15em);
+  }
+
+
+  /* Estilos para pantallas grandes */
+@media only screen and (min-width: 768px) {
+  .site-title {
+    font-size: 6rem;
+  }
+  .site-description {
+    width: 800px;
+    font-size: 1.2rem;
+  }
+  .btn-inscribete {
+    font-size: 1.5rem;
+  }
+}
+
+/* Estilos para pantallas medianas */
+@media only screen and (max-width: 767px) {
+  .site-title {
+    font-size: 6rem;
+  }
+  .site-description {
+    width: 90%;
+    font-size: 1rem;
+  }
+  .btn-inscribete {
+    font-size: 1.2rem;
+  }
+}
+
+/* Estilos para pantallas pequeñas */
+@media only screen and (max-width: 650px) {
+  .site-title {
+    font-size: 4rem;
+  }
+  .site-description {
+    width: 90%;
+    font-size: 0.9rem;
+  }
+  .btn-inscribete {
+    font-size: 1rem;
+  }
+}
