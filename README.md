@@ -24,8 +24,8 @@ de salud, Calcular IMC, Calcular Calorías, Contamos con inicio de sesión , reg
 ## Capturas de Pantalla
 
 ![Captura de Pantalla 1](https://github.com/Jhon-Toro/GymWarrior/raw/main/fotos/Captura.PNG)
-![Captura de Pantalla 2](https://github.com/Jhon-Toro/clima-app/raw/main/Clima3.PNG)
-![Captura de Pantalla 3](https://github.com/Jhon-Toro/clima-app/raw/main/clima.PNG)
+![Captura de Pantalla 2](https://github.com/Jhon-Toro/GymWarrior/raw/main/fotos/Captura2.PNG)
+![Captura de Pantalla 3](https://github.com/Jhon-Toro/GymWarrior/raw/main/fotos/Captura3.PNG)
 
 
 
